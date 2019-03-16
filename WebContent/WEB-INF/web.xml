@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>LibraryMS</display-name>
+
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>com.sgic.controller.AddBook</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/AddBook</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>mainadd</servlet-name>
+		<servlet-class>com.sgic.controller.AddMainClassification</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>mainadd</servlet-name>
+		<url-pattern>/AddMainClassificationss</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>upbook</servlet-name>
+		<servlet-class>com.sgic.controller.EditBook</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>upbook</servlet-name>
+		<url-pattern>/EditBook</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>upbook1</servlet-name>
+		<servlet-class>com.sgic.controller.DeleteBook</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>upbook1</servlet-name>
+		<url-pattern>/deletebook</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
